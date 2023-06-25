@@ -135,10 +135,6 @@ media/
 .media
 
 # FRONTEND
-frontend/node_modules
-
-# BACKEND
-backend/static_backend
 
 # dependencies
 /node_modules
