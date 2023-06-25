@@ -1,4 +1,4 @@
-ip: 130.193.41.218;
+IP: 130.193.41.218;
 name_taski: https://yps14.ddns.net;
 name_littygram: https://hayrinat.sytes.net/;
 login: rinat;
