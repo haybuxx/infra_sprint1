@@ -1,10 +1,11 @@
 import datetime as dt
+import base64
+
 import webcolors
 from django.core.files.base import ContentFile
 from rest_framework import serializers
 
 from .models import Achievement, AchievementCat, Cat
-import base64
 
 
 class Hex2NameColor(serializers.Field):
@@ -62,7 +63,6 @@ class CatSerializer(serializers.ModelSerializer):
     
     def create(self, validated_data):
         cat = Cat.objects.create(**validated_data)
-
         if 'achievements' in self.initial_data:
             achievements = validated_data.pop('achievements')
             for achievement in achievements:
